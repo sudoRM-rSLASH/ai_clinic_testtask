@@ -7,11 +7,10 @@ class TeamSerializer(serializers.ModelSerializer):
 
     class Meta:
         model = Teams
-        fields = ("id", "name", "teammate")
+        fields = '__all__'
 
 
 class PersonSerializer(serializers.ModelSerializer):
-
     class Meta:
         model = People
-        fields = ("id", "first_name", "last_name", "email", "team")
+        fields = '__all__'
